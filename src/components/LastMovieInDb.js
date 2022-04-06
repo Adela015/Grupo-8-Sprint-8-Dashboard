@@ -6,7 +6,7 @@ function LastMovieInDb(){
     let [verDetalleEstado, setVerDetalleEstado] = useState(false)
     
     useEffect(() => {
-        fetch('/api/products')
+        fetch('https://grupo-8-zero-sprint-8.herokuapp.com/api/products')
         .then(response => {
             return response.json()
         })
@@ -32,7 +32,7 @@ function LastMovieInDb(){
                     <div className="text-center">
                         {
                             Object.keys(ultimoProducto).length > 0 &&
-                            <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: 40 +'rem'}} src={'http://localhost:3003/images/albumes/'+ultimoProducto.imagen} alt=" Star Wars - Mandalorian "/>}
+                            <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: 40 +'rem'}} src={'https://grupo-8-zero-sprint-8.herokuapp.com/images/albumes/'+ultimoProducto.imagen} alt=" Star Wars - Mandalorian "/>}
                     </div>
                     <p>Titulo: {ultimoProducto.name}</p>
                     <p>Precio: {ultimoProducto.price}</p>
@@ -46,7 +46,7 @@ function LastMovieInDb(){
                     <div className="text-center">
                         {
                             Object.keys(ultimoProducto).length > 0 &&
-                            <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: 40 +'rem'}} src={'http://localhost:3003/images/albumes/'+ultimoProducto.imagen} alt=" Star Wars - Mandalorian "/>}
+                            <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{width: 40 +'rem'}} src={'https://grupo-8-zero-sprint-8.herokuapp.com/images/albumes/'+ultimoProducto.imagen} alt=" Star Wars - Mandalorian "/>}
                     </div>
                     
                     <p>Titulo: {ultimoProducto.name}</p>

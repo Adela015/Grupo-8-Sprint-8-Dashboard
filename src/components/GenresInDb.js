@@ -4,7 +4,7 @@ function GenresInDb() {
   let [generoLista, setGeneroLista] = useState([])
 
   useEffect(() => {
-    fetch('/api/products')
+    fetch('https://grupo-8-zero-sprint-8.herokuapp.com/api/products')
     .then(response => {
         return response.json()
     })
